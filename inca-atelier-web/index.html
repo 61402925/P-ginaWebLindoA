@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inca Atelier</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400&family=Cinzel:wght@500;600&family=Montserrat:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="p-fret" width="24" height="12" patternUnits="userSpaceOnUse"><path d="M0 11H6V6H12V1H18V6H24" fill="none" stroke="currentColor" stroke-width="1.4"/></pattern>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#inicio" aria-label="Inca Atelier, inicio"><img src="images/logo.webp" alt="Inca Atelier" width="76" height="66"></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">MENÚ</button>
+    <nav id="nav" aria-label="Principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#coleccion">Colección</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#historia">Historia</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="cart" id="cartBtn" aria-label="Bolsa de compras"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg><span id="cartN">0</span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Colección Primavera 2026</span>
+        <h1>Eleva tu estilo con <em>herencia</em> andina</h1>
+        <p class="lead">Prendas en vicuña y baby alpaca, cortadas con sastrería europea y tejidas en telar de cintura. Piezas únicas, con certificado de origen, hechas en Perú.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#coleccion">Comprar ahora <span aria-hidden="true">→</span></a>
+          <a class="play" href="#galeria"><i><svg viewBox="0 0 12 12"><path d="M1 0l11 6L1 12z" fill="currentColor"/></svg></i>Ver lookbook</a>
+        </div>
+        <div class="perks">
+          <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 7h12v9H2zM14 10h5l3 3v3h-8z"/><circle cx="7" cy="17" r="1.8"/><circle cx="18" cy="17" r="1.8"/></svg><div><b>Envío internacional asegurado</b><span>Con seguimiento y embalaje de lujo</span></div></div>
+          <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><div><b>Certificado de origen</b><span>Trazabilidad de cada fibra</span></div></div>
+          <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="5" width="16" height="15"/><path d="M4 10h16M9 3v4M15 3v4"/></svg><div><b>Cita privada</b><span>Showroom en Lima y Cusco</span></div></div>
+        </div>
+      </div>
+      <div class="arch"><img src="images/novia-cusco.webp" alt="Novia con vestido blanco bordado en el claustro de una casona colonial del Cusco" width="595" height="686"></div>
+    </div>
+  </div>
+</section>
+
+<div class="strip-wrap" id="categorias">
+  <div class="wrap">
+    <div class="strip" role="group" aria-label="Categorías">
+      <button class="cat" data-f="Novias"><span class="dot"><img src="images/novia-lago.webp" alt="" style="object-position:50% 22%" loading="lazy"></span>Novias</button>
+      <button class="cat" data-f="Vestidos"><span class="dot"><img src="images/vestido-encaje.webp" alt="" style="object-position:50% 38%" loading="lazy"></span>Vestidos</button>
+      <button class="cat" data-f="Blusas"><span class="dot c"><img src="images/blusa-brocado.webp" alt="" loading="lazy"></span>Blusas</button>
+      <button class="cat" data-f="Tejidos"><span class="dot"><img src="images/chompa-rosa.webp" alt="" style="object-position:50% 35%" loading="lazy"></span>Tejidos</button>
+      <button class="cat" data-f="Pantalones"><span class="dot c"><img src="images/pantalon-rayas.webp" alt="" loading="lazy"></span>Pantalones</button>
+      <button class="cat dark" data-f="Todo"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5"/><rect x="13.5" y="4" width="6.5" height="6.5"/><rect x="4" y="13.5" width="6.5" height="6.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5"/></svg></span>Ver todo</button>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow">Compra por línea</span><h2>Encuentra tu estilo</h2></div>
+      <a class="link-more" href="#coleccion" data-f="Todo">Ver toda la colección <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="cards">
+      <a class="card" href="#coleccion" data-f="Novias"><img src="images/novia-lago.webp" alt="" style="object-position:50% 20%" loading="lazy"><b>Imperial Couture</b><span>Novias y gala →</span></a>
+      <a class="card" href="#coleccion" data-f="Tejidos"><img src="images/chompa-selva.webp" alt="" loading="lazy"><b>Vicuña &amp; Alpaca Reserve</b><span>Tejidos de edición numerada →</span></a>
+      <a class="card" href="#coleccion" data-f="Vestidos"><img src="images/vestido-encaje.webp" alt="" style="object-position:50% 40%" loading="lazy"><b>Vestidos de gala</b><span>Encaje y bordado →</span></a>
+      <a class="card" href="#coleccion" data-f="Blusas"><img src="images/blusa-floral.webp" alt="" loading="lazy"><b>Blusas bordadas</b><span>Hechas a mano →</span></a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap promos">
+    <div class="promo">
+      <div><small>Por tiempo limitado</small><h3>Colección Primavera 2026</h3><a class="btn" href="#coleccion" data-f="Todo">Ver novedades <span aria-hidden="true">→</span></a></div>
+      <div class="art wb"><img src="images/blusa-roja.webp" alt="" loading="lazy"></div>
+    </div>
+    <div class="promo" style="background:var(--t3)">
+      <div><small>Atención personalizada</small><h3>Reserva tu cita privada</h3><a class="btn" href="#contacto">Agendar cita <span aria-hidden="true">→</span></a></div>
+      <div class="art"><img src="images/vestido-negro.webp" alt="" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section id="coleccion" style="padding-top:20px">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow">Piezas destacadas</span><h2>Nuestras favoritas</h2></div>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Filtrar productos"></div>
+    <div class="grid" id="grid"></div>
+    <p class="lead" style="margin-top:28px;font-size:13px">Precios en soles (S/), IGV incluido. Las piezas de edición numerada se reservan por cita privada.</p>
+  </div>
+</section>
+
+<section id="servicios" style="padding-top:20px">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow">Productos y servicios</span><h2>Lujo hecho a tu medida</h2></div></div>
+    <div class="services">
+      <article class="svc"><small>Novias y gala</small><h3>Imperial Couture</h3><p>Vestidos de alta costura confeccionados a medida, con bordados en hilo de oro e intervenciones de brocados andinos.</p></article>
+      <article class="svc"><small>Edición numerada</small><h3>Vicuña &amp; Alpaca Reserve</h3><p>Sacos, abrigos y chales elaborados en 100% fibra de vicuña y baby alpaca.</p></article>
+      <article class="svc"><small>Sastrería masculina</small><h3>Alta sastrería a medida</h3><p>Trajes ejecutivos y de gala con forros e intervenciones inspiradas en la geometría incaica.</p></article>
+      <article class="svc"><small>Servicio</small><h3>Atelier Private Experience</h3><p>Asesoría personalizada de estilismo, colorimetría y diseño exclusivo en showroom privado.</p></article>
+    </div>
+    <div class="feats">
+      <div><b>Las fibras más finas</b>Vicuña y baby alpaca con trazabilidad garantizada.</div>
+      <div><b>Diseño fusionado</b>Cortes de sastrería europea con paños de telar de cintura.</div>
+      <div><b>Private Appointment</b>Atención personalizada en cita privada.</div>
+    </div>
+    <div class="public">
+      <div>Mujeres y hombres de 30 a 65 años, coleccionistas de moda y alta gama.</div>
+      <div>Diplomáticos, personalidades de la cultura, ejecutivos y novias premium.</div>
+      <div>Turistas de lujo y compradores internacionales que buscan piezas de valor cultural y ético.</div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="nosotros">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow">Nosotros</span>
+      <h2>La majestuosidad textil incaica, en alta costura</h2>
+      <div class="mv">
+        <div><h3>Misión</h3><p>Rescatar la majestuosidad de la herencia textil incaica y llevarla a la alta costura contemporánea, creando prendas exclusivas en vicuña y alpaca que fusionen elegancia internacional con identidad cultural peruana.</p></div>
+        <div><h3>Visión</h3><p>Posicionarse para el año 2030 como la casa de moda de lujo sostenible andina de mayor prestigio en América Latina y Europa, siendo símbolo mundial de la maestría artesanal del Perú.</p></div>
+      </div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:18px">Valores principales</h3>
+      <div class="values">
+        <div><b>Herencia Ancestral</b><span>Preservación de técnicas de tejido milenarias e iconografía tradicional.</span></div>
+        <div><b>Sostenibilidad y Comercio Justo</b><span>Trabajo ético con comunidades de criadores y tejedores de Puno, Cusco y Ayacucho.</span></div>
+        <div><b>Exclusividad y Lujo Consciente</b><span>Producción a pequeña escala de piezas únicas con certificación de origen.</span></div>
+        <div><b>Perfección en el Detalle</b><span>Confección de alta precisión, acabados hechos a mano y patronaje personalizado.</span></div>
+      </div>
+      <h3 style="margin:34px 0 14px">Ficha de la empresa</h3>
+      <dl class="ficha">
+        <dt>Razón social</dt><dd>Inca Atelier S.A.C.</dd>
+        <dt>RUC</dt><dd>20601234567</dd>
+        <dt>Fundación</dt><dd>2010</dd>
+        <dt>Sede</dt><dd>Lima, Perú (taller textil en Cusco)</dd>
+        <dt>Tipo</dt><dd>Productos y servicios: alta costura, textil de lujo, sastrería a medida y moda sostenible de autor</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="history" id="historia">
+  <div class="wrap hist-grid">
+    <div>
+      <span class="eyebrow">Historia y logros</span>
+      <h2>Más de quince años tejiendo prestigio</h2>
+      <p class="lead" style="margin-top:20px">Inca Atelier se fundó en 2010 en Miraflores por una dupla de diseñadores peruano-italianos con el objetivo de elevar las fibras nobles del Perú al estándar global del Haute Couture. Comenzó como un pequeño taller de sastrería fina y se convirtió en la casa de diseño predilecta de novias y personalidades destacadas de Lima.</p>
+      <p class="lead" style="margin-top:14px">En 2018 integró sus propias rutas de recolección de fibra ética en el sur del país, y estableció su sello de lujo con propósito.</p>
+    </div>
+    <ol class="tl">
+      <li><time>2010</time><p><b>Fundación en Miraflores.</b> Nace el taller de sastrería fina.</p></li>
+      <li><time>2014</time><p><b>París Fashion Week.</b> Primer desfile internacional en el bloque de moda sostenible.</p></li>
+      <li><time>2017</time><p><b>Premio Nacional a la Innovación Textil</b>, otorgado por el MINCETUR.</p></li>
+      <li><time>2018</time><p><b>Rutas de fibra ética.</b> Recolección propia en el sur del país.</p></li>
+      <li><time>2021</time><p><b>Showroom en Cusco.</b> Apertura en una casona colonial del siglo XVI, en el Centro Histórico.</p></li>
+      <li><time>2025</time><p><b>Licencia de la Marca País Perú</b> por su aporte al posicionamiento internacional de la vicuña peruana.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow">Galería</span><h2>Lookbook</h2></div></div>
+    <div class="gal">
+      <div class="tile wide"><img src="images/cusco.webp" alt="Plaza de Armas del Cusco con la catedral y los Andes al fondo" loading="lazy"><p>Cusco, Centro Histórico: sede de nuestro showroom</p></div>
+      <div class="tile"><img src="images/novia-lago.webp" alt="Novia con vestido de satén bordado junto a un lago andino" style="object-position:50% 20%" loading="lazy"><p>Imperial Couture: bordados de inspiración andina</p></div>
+      <div class="tile"><img src="images/vestido-encaje.webp" alt="Vestido de encaje negro y dorado" style="object-position:50% 38%" loading="lazy"><p>Encaje y dorado en alta costura</p></div>
+      <div class="tile"><img src="images/chompa-rosa.webp" alt="Chompa de alpaca blanca con llamas tejidas" style="object-position:50% 30%" loading="lazy"><p>Tejidos de alpaca con iconografía andina</p></div>
+      <div class="tile"><img src="images/novia-cusco.webp" alt="Novia en una casona colonial del Cusco" style="object-position:50% 25%" loading="lazy"><p>Casona colonial del siglo XVI</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="history" style="background:var(--surface)" id="identidad">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow">Elementos visuales</span><h2>Identidad de marca</h2></div></div>
+    <div class="ident">
+      <div class="ibox dark">
+        <h3>Logo</h3>
+        <img src="images/logo.webp" alt="Logo de Inca Atelier" loading="lazy">
+        <p>Monograma IA con una aguja de telar en trazo dorado.</p>
+      </div>
+      <div class="ibox">
+        <h3>Paleta</h3>
+        <div class="sw">
+          <div><i style="background:#C59B27"></i><b>Dorado Inca</b>#C59B27</div>
+          <div><i style="background:#8B4513"></i><b>Terracota Andino</b>#8B4513</div>
+          <div><i style="background:#111111"></i><b>Negro Místico</b>#111111</div>
+          <div><i style="background:#F4F0EA"></i><b>Blanco Alpaca / Arena</b>#F4F0EA</div>
+        </div>
+      </div>
+      <div class="ibox specimen">
+        <h3>Tipografía</h3>
+        <small>TITULARES Y LOGOTIPO · Cinzel / Bodoni Moda</small>
+        <div class="d">Inca Atelier</div>
+        <div class="b">Alta costura andina</div>
+        <small>CUERPO DE TEXTO · Montserrat</small>
+        <div class="m">Prendas exclusivas en vicuña y baby alpaca, con acabados hechos a mano.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap c-grid">
+    <div>
+      <span class="eyebrow">Contacto y redes</span>
+      <h2>Agenda tu cita privada</h2>
+      <div class="locs">
+        <div class="loc"><b>Lima</b>Av. Mariscal La Mar 920, Miraflores, Lima, Perú</div>
+        <div class="loc"><b>Cusco</b>Calle Palacio 135, Centro Histórico, Cusco, Perú</div>
+      </div>
+      <div class="rows">
+        <div><span>Teléfono</span><p>+51 (01) 421-9080</p></div>
+        <div><span>WhatsApp VIP</span><p>+51 998 765 432</p></div>
+        <div><span>Correo</span><p>contacto@incaatelier.pe<br>atelier@incaatelier.pe</p></div>
+        <div><span>Web</span><p>www.incaatelier.pe</p></div>
+        <div><span>Instagram</span><p>@incaatelier_oficial</p></div>
+        <div><span>Facebook</span><p>@IncaAtelierPeru</p></div>
+        <div><span>LinkedIn</span><p>Inca Atelier S.A.C.</p></div>
+      </div>
+    </div>
+    <form id="form" novalidate>
+      <label for="f-nombre">Nombre completo<input id="f-nombre" name="nombre" autocomplete="name" required></label>
+      <label for="f-correo">Correo electrónico<input id="f-correo" name="correo" type="email" autocomplete="email" required></label>
+      <label for="f-interes">Me interesa<select id="f-interes"><option>Imperial Couture (novias y gala)</option><option>Vicuña &amp; Alpaca Reserve</option><option>Sastrería a medida</option><option>Atelier Private Experience</option></select></label>
+      <label for="f-sede">Showroom<select id="f-sede"><option>Lima, Miraflores</option><option>Cusco, Centro Histórico</option></select></label>
+      <label for="f-msg">Mensaje<textarea id="f-msg" placeholder="Cuéntanos qué pieza o experiencia buscas"></textarea></label>
+      <button class="btn" type="submit" style="justify-self:start">Solicitar cita <span aria-hidden="true">→</span></button>
+      <div class="ok" id="ok" hidden></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <svg class="fret" width="100%" height="12" aria-hidden="true"><rect width="100%" height="12" fill="url(#p-fret)"/></svg>
+  <div class="wrap">
+    <div class="foot">
+      <div><img src="images/logo.webp" alt="Inca Atelier" loading="lazy"><p>Alta costura andina en vicuña y baby alpaca. Lima y Cusco, Perú.</p></div>
+      <div><b>Showrooms</b><p>Av. Mariscal La Mar 920, Miraflores, Lima<br>Calle Palacio 135, Cusco</p></div>
+      <div><b>Contacto</b><p>contacto@incaatelier.pe<br>+51 (01) 421-9080</p></div>
+    </div>
+    <p class="legal">Inca Atelier S.A.C. · RUC 20601234567 · © 2026. Datos de la empresa ficticios, con fines académicos.</p>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
